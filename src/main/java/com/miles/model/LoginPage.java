@@ -10,13 +10,13 @@ import java.util.List;
 
 public class LoginPage {
 
-    @FindBy(name = "username")
+    @FindBy(name = "userId")
     private List<WebElement> usernameList;
 
     @FindBy(name = "password")
     private List<WebElement> passwordList;
 
-    @FindBy(className = Constant.LOGIN_BUTTON)
+    @FindBy(name= Constant.LOGIN_BUTTON)
     private List<WebElement> loginButton;
 
 
@@ -25,11 +25,13 @@ public class LoginPage {
     }
 
     public LoginPage setCredentials(String username, String password) {
-      usernameList.get(1).sendKeys(username);
-      passwordList.get(1).sendKeys(password);
+      usernameList.get(0).sendKeys(username);
+      passwordList.get(0).sendKeys(password);
       return this;
     }
 
-    public void clickLoginButton() {loginButton.get(2).click(); }
+    public void clickLoginButton() {
+        System.out.println();
+        loginButton.get(0).click(); }
 
 }

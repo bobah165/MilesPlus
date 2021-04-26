@@ -3,7 +3,7 @@ package com.miles.config;
 
 public class Constant {
 
-    public final static String USERNAME = "";
+    public final static String USERNAME = "vkalenov";
 
     public final static String PASSWORD = "";
 
@@ -25,7 +25,7 @@ public class Constant {
 
     public final static String CSS_FOR_SETTING_WEEK = "table tbody tr td.wkhead a";
 
-    public final static String LOGIN_BUTTON = "Button";
+    public final static String LOGIN_BUTTON = "login";
 
     public final static String CSS_FOR_SAVE_BUTTON = "input[value='Save']";
 
